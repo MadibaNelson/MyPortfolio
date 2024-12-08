@@ -11,6 +11,7 @@ h2{
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
+  margin-bottom: 200px;
 }
 
 .pic-div{
@@ -27,4 +28,15 @@ h2{
 .img-div{
   width: 100%;
   object-fit: contain;
+}
+
+.footer-bar{
+  width: 100%;
+  background-color: black;
+  color: rgb(10, 61, 10);
+  text-align: center;
+  border-top: 1px solid gray;
+  margin-top: 20px;
+  height: 30px;
+  padding: 20px 0px;
 }
