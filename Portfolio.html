@@ -7,37 +7,61 @@
 </head>
 <body>
   <h1>My Portfolio</h1>
+  <div>
+    <img src="hamburger-menu.png" class="menu-img js-menu-img">
+    <div class="js-menu-tips"></div>
+  </div>
+  <div class="cont-div">
+    <a href="https://wa.me/qr/UR6G||62JXA5N1">
+      <img src="whatsapp.png" class="cont-imge">
+    </a>
+    <a href="https://www.linkedin.com/in/nelson-chidiebere-35744a26a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+      <img src="linkedin.jpeg" class="cont-imge">
+    </a>
+  </div>
   <div class="contain">
     <div class="pic-div">
       <img src="mpic.jpg" class="imge-div">
     </div>
-  
-    <div class="cover-div">
-      <h2>My Cover Letter</h3>
+
+    <div class="mini-contain">
+      <div class="welcome-div">Welcome</div> <br>
       <div>
-        <img src="cover.jpg" class="img-div">
+        Hi My name is Nelson. I am a FrontEnd Developer based in Nigeria, Africa. I have done different kinds of Frontend projects for some private companies; and Ecommerce platforms. <br> <br>
+        I am passionate about JavaScript, Animations; Turning ideas into Stunning Websites and Crafting Digital Experiences.
       </div>
     </div>
-  
-    <div class="cv-div">
-      <h2>Curriculum Vite</h3>
-      <div><img src="cv1.jpg" class="img-div"></div>
-      <div><img src="cv2.jpg" class="img-div"></div>
-      <div><img src="cv3.jpg" class="img-div"></div>
-    </div>
-  
-    <div class="site-div">
-      <h2>My Websits</h3>
-      <div><a href="https://madibanelson.github.io/ChidiNels-Madiba/voac.html">First website</a></div>
-      <div><a href="https://madibanelson.github.io/ChidiNels-Madiba/12-rock-paapper-scissors.html">Second website</a></div>
-      <div><a href="https://madibanelson.github.io/ChidiNels-Madiba/Elson.html">Main website</a> <br> <br>
-      <strong>Note: You have to sign-in by clicking the sign-in button to see the main project</strong>
-      </div>
-    </div>
+    
   </div>
 
   <footer class="footer-bar">
     Copywrite 2024@Powered by MadibaMandela Chidi N
   </footer>
+
+  <script>
+
+    const menuHtml = `<div class="menu-tips">
+      <p>Home</p>
+      <p>Skills</p>
+      <p>Portfolio: Project</p>
+      <p>Contact</p>
+      <p>About</p>
+    </div>`;
+
+    const menus = (document.querySelector('.js-menu-tips'));
+
+    let menu = false;
+    
+    document.querySelector('.js-menu-img').addEventListener('click', ()=>{
+      if (!menu){
+        menus.innerHTML = menuHtml;
+        menu = true;
+      }else if(menu === true){
+        menus.innerHTML = '';
+        menu = false;
+      }
+    })
+
+  </script>
 </body>
 </html>
