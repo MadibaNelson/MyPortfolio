@@ -8,20 +8,20 @@
 <body>
   <h1>My Portfolio</h1>
   <div>
-    <img src="hamburger-menu.png" class="menu-img js-menu-img">
+    <img src="images/hamburger-menu.png" class="menu-img js-menu-img">
     <div class="js-menu-tips"></div>
   </div>
   <div class="cont-div">
     <a href="https://wa.me/qr/UR6G||62JXA5N1">
-      <img src="whatsapp.png" class="cont-imge">
+      <img src="images/whatsapp.png" class="cont-imge">
     </a>
     <a href="https://www.linkedin.com/in/nelson-chidiebere-35744a26a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-      <img src="linkedin.jpeg" class="cont-imge">
+      <img src="images/linkedin.jpeg" class="cont-imge">
     </a>
   </div>
   <div class="contain">
     <div class="pic-div">
-      <img src="mpic.jpg" class="imge-div">
+      <img src="images/mpic.jpg" class="imge-div">
     </div>
 
     <div class="mini-contain">
@@ -31,37 +31,17 @@
         I am passionate about JavaScript, Animations; Turning ideas into Stunning Websites and Crafting Digital Experiences.
       </div>
     </div>
-    
+  </div>
+
+  <div class="js-skills-div"></div>
+
+  <div class="js-contacts-div">
   </div>
 
   <footer class="footer-bar">
     Copywrite 2024@Powered by MadibaMandela Chidi N
   </footer>
 
-  <script>
-
-    const menuHtml = `<div class="menu-tips">
-      <p>Home</p>
-      <p>Skills</p>
-      <p>Portfolio: Project</p>
-      <p>Contact</p>
-      <p>About</p>
-    </div>`;
-
-    const menus = (document.querySelector('.js-menu-tips'));
-
-    let menu = false;
-    
-    document.querySelector('.js-menu-img').addEventListener('click', ()=>{
-      if (!menu){
-        menus.innerHTML = menuHtml;
-        menu = true;
-      }else if(menu === true){
-        menus.innerHTML = '';
-        menu = false;
-      }
-    })
-
-  </script>
+  <script src="portfolio.js"></script>
 </body>
 </html>
